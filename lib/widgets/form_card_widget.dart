@@ -6,7 +6,7 @@ class FormCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: ScreenUtil().setHeight(500),
+      height: 500, //ScreenUtil().setHeight(500),
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(8.0),
@@ -20,43 +20,45 @@ class FormCard extends StatelessWidget {
                 offset: Offset(0.0, -10.0),
                 blurRadius: 10.0),
           ]),
-      child: Padding(
-        padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0),
+      child: const Padding(
+        padding: EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text("Login",
                 style: TextStyle(
-                    fontSize: ScreenUtil().setSp(45),
+                    fontSize: 45, //ScreenUtil().setSp(45),
                     fontFamily: "Poppins-Bold",
                     letterSpacing: .6)),
             SizedBox(
-              height: ScreenUtil().setHeight(30),
+              height: 30 //ScreenUtil().setHeight(30),
             ),
             Text("Username",
                 style: TextStyle(
                     fontFamily: "Poppins-Medium",
-                    fontSize: ScreenUtil().setSp(26))),
-            const TextField(
+                    fontSize: 26 //ScreenUtil().setSp(26)
+                  )),
+            TextField(
               decoration: InputDecoration(
                   hintText: "username",
                   hintStyle: TextStyle(color: Colors.grey, fontSize: 12.0)),
             ),
             SizedBox(
-              height: ScreenUtil().setHeight(30),
+              height: 30 //ScreenUtil().setHeight(30),
             ),
             Text("PassWord",
                 style: TextStyle(
-                    fontFamily: "Poppins-Medium",
-                    fontSize: ScreenUtil().setSp(26))),
-            const TextField(
+                  fontFamily: "Poppins-Medium",
+                  fontSize: 26 // ScreenUtil().setSp(26)
+                )),
+            TextField(
               obscureText: true,
               decoration: InputDecoration(
-                  hintText: "Password",
-                  hintStyle: TextStyle(color: Colors.grey, fontSize: 12.0)),
+                hintText: "Password",
+                hintStyle: TextStyle(color: Colors.grey, fontSize: 12.0)),
             ),
             SizedBox(
-              height: ScreenUtil().setHeight(35),
+              height: 35 //ScreenUtil().setHeight(35),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
@@ -64,9 +66,10 @@ class FormCard extends StatelessWidget {
                 Text(
                   "Forgot Password?",
                   style: TextStyle(
-                      color: Colors.blue,
-                      fontFamily: "Poppins-Medium",
-                      fontSize: ScreenUtil().setSp(28)),
+                    color: Colors.blue,
+                    fontFamily: "Poppins-Medium",
+                    fontSize: 28// ScreenUtil().setSp(28)
+                  ),
                 )
               ],
             )

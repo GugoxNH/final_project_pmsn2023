@@ -40,7 +40,7 @@ bool _isSelected = false;
   Widget horizontalLine() => Padding(
     padding: const EdgeInsets.symmetric(horizontal: 16.0),
     child: Container(
-      width: ScreenUtil().setWidth(120),
+      width: 120, //ScreenUtil().setWidth(120),
       height: 1.0,
       color: Colors.black26.withOpacity(.2),
     ),
@@ -77,22 +77,22 @@ bool _isSelected = false;
                     children: <Widget>[
                       Image.asset(
                         "assets/logo.png",
-                        width: ScreenUtil().setWidth(110),
-                        height: ScreenUtil().setHeight(110),
+                        width: 110,//ScreenUtil().setWidth(110),
+                        height: 110, //ScreenUtil().setHeight(110),
                       ),
-                      Text("LOGO",
+                      const Text("LOGO",
                           style: TextStyle(
                               fontFamily: "Poppins-Bold",
-                              fontSize: ScreenUtil().setSp(46),
+                              fontSize: 46, //ScreenUtil().setSp(46),
                               letterSpacing: .6,
                               fontWeight: FontWeight.bold))
                     ],
                   ),
-                  SizedBox(
-                    height: ScreenUtil().setHeight(180),
+                  const SizedBox(
+                    height: 180, //ScreenUtil().setHeight(180),
                   ),
                   FormCard(),
-                  SizedBox(height: ScreenUtil().setHeight(40)),
+                  const SizedBox(height: 40), //ScreenUtil().setHeight(40)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
@@ -115,8 +115,8 @@ bool _isSelected = false;
                       ),
                       InkWell(
                         child: Container(
-                          width: ScreenUtil().setWidth(330),
-                          height: ScreenUtil().setHeight(100),
+                          width: 330, //ScreenUtil().setWidth(330),
+                          height: 100, //ScreenUtil().setHeight(100),
                           decoration: BoxDecoration(
                               gradient: const LinearGradient(colors: [
                                 Color(0xFF17ead9),
@@ -147,8 +147,8 @@ bool _isSelected = false;
                       )
                     ],
                   ),
-                  SizedBox(
-                    height: ScreenUtil().setHeight(40),
+                  const SizedBox(
+                    height: 40, //ScreenUtil().setHeight(40),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -160,8 +160,8 @@ bool _isSelected = false;
                       horizontalLine()
                     ],
                   ),
-                  SizedBox(
-                    height: ScreenUtil().setHeight(40),
+                  const SizedBox(
+                    height: 40, //ScreenUtil().setHeight(40),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -201,8 +201,8 @@ bool _isSelected = false;
                       )
                     ],
                   ),
-                  SizedBox(
-                    height: ScreenUtil().setHeight(30),
+                  const SizedBox(
+                    height: 30 //ScreenUtil().setHeight(30),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
